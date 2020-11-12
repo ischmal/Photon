@@ -25,11 +25,7 @@ local function MirrorAngle(ang, method)
 	return newAng
 end
 
-local A = "AMBER"
-local R = "RED"
-local DR = "D_RED"
 local B = "BLUE"
-local W = "WHITE"
 local CW = "C_WHITE"
 local SW = "S_WHITE"
 
