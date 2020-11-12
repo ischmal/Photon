@@ -5,6 +5,7 @@ Photon.EMVLibrary = {}
 
 -- These were converted to be read-only after addons were breaking compatibility with the Ford Police Interceptor Utility
 
+-- This maps a model to a photon (civ lighting) key.
 local PhotonVehicleIndex = {
 	["models/lonewolfie/chev_impala_09_police.mdl"] = "lw_impala",
 	["models/lonewolfie/chev_impala_09_taxi.mdl"] = "lw_impala",
@@ -44,6 +45,7 @@ function Photon.GetVehicleIndex( key )
 	return tableFunc( PhotonVehicleIndex, key )
 end
 
+-- This maps a model to a EMV key.
 local PhotonEMVIndex = {
 	["models/lonewolfie/chev_impala_09_police.mdl"] = "Chevrolet Impala LS Police Cruiser",
 	["models/lonewolfie/chev_tahoe_police.mdl"] = "Chevrolet Tahoe Secret Service",
@@ -63,6 +65,7 @@ function Photon.GetEMVIndex( key )
 	return tableFunc( PhotonEMVIndex, key )
 end
 
+-- This maps a model to a list.Get("Vehicles") key.
 local PhotonDefaultMapping = {
 	["models/lonewolfie/chev_impala_09_police.mdl"] = "chev_impala_09_police",
 	["models/lonewolfie/chev_impala_09_taxi.mdl"] = "chev_impala_09_taxi",
