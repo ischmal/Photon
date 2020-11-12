@@ -52,9 +52,15 @@ EMV.Meta = {
 	},
 	hl_left = {
 		AngleOffset = -90,
-		W = 13.5,
-		H = 13.5,
+		W = 14.2,
+		H = 13.3,
 		Sprite = "sprites/emv/lw_volvo_s60_headlight_left"
+	},
+	hl_right = {
+		AngleOffset = -90,
+		W = 14.2,
+		H = 13.3,
+		Sprite = "sprites/emv/lw_volvo_s60_headlight_right"
 	},
 
 	lightbar_f = {
@@ -111,7 +117,7 @@ EMV.Lamps = {
 
 EMV.PosMap = {
 	Grill = {Vector(9.45, 114.8, 44.57), Angle(0, -6.05, 5)},
-	Headlight = {Vector(31, 107.1, 44.57), Angle(0, -10, 2)},
+	Headlight = {Vector(31.1, 107.15, 44.67), Angle(-3, -10.6, 2.6)},
 	Lightbar = {
 		{Vector(3.68, -7.88, 87.29), Angle(0, 0, 0)},
 		{Vector(11.3, -8.76, 87.31), Angle(0, 0, 0)},
@@ -134,7 +140,7 @@ EMV.Positions = {
 	{MirrorVector(EMV.PosMap.Grill[1]), MirrorAngle(EMV.PosMap.Grill[2], "opp"), "grill"},
 
 	{EMV.PosMap.Headlight[1], EMV.PosMap.Headlight[2], "hl_left"},
-	{MirrorVector(EMV.PosMap.Headlight[1]), MirrorAngle(EMV.PosMap.Headlight[2], "opp"), "hl_left"},
+	{MirrorVector(EMV.PosMap.Headlight[1]), MirrorAngle(EMV.PosMap.Headlight[2], "opp"), "hl_right"},
 
 	-- Lightbar Forward Central White Node
 	{EMV.PosMap.Lightbar[1][1], EMV.PosMap.Lightbar[1][2], "lightbar_f"},
